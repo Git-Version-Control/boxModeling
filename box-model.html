@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Modeling</title>
+        <style>
+            .box{
+                background-color: bisque;
+                border: 0.7em solid brown;
+                padding: 30px;
+                margin: 20px;
+                height: 100px;
+                width:250px;
+                font-size: large;
+            }
+            .alternate{
+                box-sizing: border-box;
+            }
+            .dotted{
+                border:5px dotted black;
+                width:250px;
+                height:50px;
+                padding: 1em;
+                margin:20px 1em 40px 2em;
+                font-size: larger;
+            }
+            .boxModel span{
+                background-color: aquamarine;
+                border: 5px solid black;
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">I use the standard box</div>
+        <div class="box alternate">I use the alternate box</div>
+        <div class="dotted">I use the standard box</div>
+        <div class=""boxModel">
+        <p>In CSS we broadly have two types of boxes
+        — <span>block boxes and inline boxes.</span> These characteristics
+         refer to how the box behaves in terms of page flow and in relation 
+         to other boxes on the page. Boxes also have an  inner display type 
+         and an outer display type.</p></div>
+    </body>
+</html>
